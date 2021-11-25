@@ -1,117 +1,95 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: "Open Sans", sans-serif;  
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");  
+ * {  
+  box-sizing: border-box;  
+  margin: 0;  
+  padding: 0;  
+ }  
+ body {  
+  font-family: "Open Sans", sans-serif;  
   height: 100vh;  
-}
-.silider-container {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    height:100vh;
-}
-.left-slide {
-    height: 100%;
-    width: 35%;
-    position: absolute;
-    top: 0;
-    left:0;
-    transition: transform 0.5s ease-in-out;
-
-}
-.left-slide >div {
+ }  
+ .slider-container {  
+  position: relative;  
+  overflow: hidden;  
+  width: 100vw;  
+  height: 100vh;  
+ }  
+ .left-slide {  
+  height: 100%;  
+  width: 35%;  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  transition: transform 0.5s ease-in-out;  
+ }  
+ .left-slide > div {  
   height: 100%;  
   width: 100%;  
-  display: flex;   
-  flex-direction: column;  /* new collection yazısını aşagı aldık  */
+  display: flex;  
+  flex-direction: column;  
   align-items: center;  
   justify-content: center;  
-  color: #fff; 
-  
-}
-.ri
-.left-slide h1 {  
-    font-size: 40px;  
-    margin-bottom: 10px;  
-    margin-top: -30px;  
-   }  
-   .right-slide {  
-    height: 100%;  
-    position: absolute;  
-    top: 0;  
-    left: 35%;  
-    width: 65%;  
-    transition: transform 0.5s ease-in-out;  
-    
-   }  
-   .right-slide > div {  
-    background-repeat: no-repeat;  
-    background-size: cover;  
-    background-position: center center;  
-    height: 100%;  
-    width: 100%;  
-    
-   }  
-   #divone {
-       background-image: url('https://source.unsplash.com/1600x900/?nature,water'); 
-       position: relative;
-       align-items: center;
-       text-align: center;
-       
-   
-   }
-   #divtwo {
-    background-image: url('https://media.vogue.fr/photos/5e8c4ff03f6f0300083cbeae/master/w_1024,c_limit/2459146330_2_1_1.jpg'); 
-    background-size: 100% 100%;
-}
-#divthree {
-    background-image: url('https://source.unsplash.com/1600x900/?car,cars'); ;
-}
-   button {  
-    background-color: #fff;  
-    border: none;  
-    color: #aaa;  
-    cursor: pointer;  
-    font-size: 16px;  
-    padding: 15px;  
-   }  
-   button:hover {  
-    color: #222;  
-   }  
-   button:focus {  
-    outline: none;  
-   }  
-   .slider-container .action-buttons button {  
-    position: absolute;  
-    left: 35%;  
-    top: 50%;  
-    z-index: 100;  
-   }  
-   .slider-container .action-buttons .down-button {  
-    transform: translateX(-100%);  
-    border-top-left-radius: 5px;  
-    border-bottom-left-radius: 5px;  
-   }  
-   .slider-container .action-buttons .up-button {  
-    transform: translateY(-100%);  
-    border-top-right-radius: 5px;  
-    border-bottom-right-radius: 5px;  
-   } 
-
-   .slider-container .right-slide .buttonOne {
-       align-items: center;
-       opacity: 0.4;
-       align-items: center;
-
-   }
-
-   .silider-container .right-slide .buttonOne h1 {
-       background-color: red;
-       display: block;
-       font-weight: bold;
-   }
+  color: #fff;  
+ }  
+ .left-slide h1 {  
+  font-size: 40px;  
+  margin-bottom: 10px;  
+  margin-top: -30px;  
+ }  
+ .right-slide {  
+  height: 100%;  
+  position: absolute;  
+  top: 0;  
+  left: 35%;  
+  width: 65%;  
+  transition: transform 0.5s ease-in-out;  
+ }  
+ .right-slide > div {  
+  background-repeat: no-repeat;  
+  background-size: cover;  
+  background-position: center center;  
+  height: 100%;  
+  width: 100%;  
+ }  
+ button {  
+  background-color: #fff;  
+  border: none;  
+  color: #aaa;  
+  cursor: pointer;  
+  font-size: 16px;  
+  padding: 15px;  
+ }  
+ button:hover {  
+  color: #222;  
+ }  
+ button:focus {  
+  outline: none;  
+ }  
+ .slider-container .action-buttons button {  
+  position: absolute;  
+  left: 35%;  
+  top: 50%;  
+  z-index: 100;  
+ }  
+ .slider-container .action-buttons .down-button {  
+  transform: translateX(-100%);  
+  border-top-left-radius: 5px;  
+  border-bottom-left-radius: 5px;  
+ }  
+ .slider-container .action-buttons .up-button {  
+  transform: translateY(-100%);  
+  border-top-right-radius: 5px;  
+  border-bottom-right-radius: 5px;  
+ }  
+ #divonebutton {
+    opacity: 0.3;
+    height:100px; 
+    width:200px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    font-weight: bolder;
+    font-size: 30px;
+    border:10px black solid;
+ }
