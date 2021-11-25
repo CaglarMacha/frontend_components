@@ -58,7 +58,12 @@ body {
     
    }  
    #divone {
-       background-image: url('https://source.unsplash.com/1600x900/?nature,water'); ;
+       background-image: url('https://source.unsplash.com/1600x900/?nature,water'); 
+       position: relative;
+       align-items: center;
+       text-align: center;
+       
+   
    }
    #divtwo {
     background-image: url('https://media.vogue.fr/photos/5e8c4ff03f6f0300083cbeae/master/w_1024,c_limit/2459146330_2_1_1.jpg'); 
@@ -98,3 +103,15 @@ body {
     border-bottom-right-radius: 5px;  
    } 
 
+   .slider-container .right-slide .buttonOne {
+       align-items: center;
+       opacity: 0.4;
+       align-items: center;
+
+   }
+
+   .silider-container .right-slide .buttonOne h1 {
+       background-color: red;
+       display: block;
+       font-weight: bold;
+   }
