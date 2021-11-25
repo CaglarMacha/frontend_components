@@ -12,7 +12,7 @@
     height: 50px;
     border-radius:0 22px 0 22px;
     margin: 50px auto;
-    width: 800px; 
+    width: 810px; 
 }
 .menu ul form  {
   padding-left: 20px;
@@ -22,7 +22,7 @@
     background: rgb(10,143,112);
     background: linear-gradient(255deg, rgba(10,143,112,1) 0%, rgba(118,229,203,1) 100%);
     border-radius: 10px 0 10px 0;
-    padding-top:33px;
+    padding-top:31px;
     text-align: center;
     vertical-align: middle;
     
@@ -38,9 +38,13 @@
     border-radius:0 10px 0 10px;
     text-align: center;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 12px;
     padding-top:16px;
     padding-bottom: 18px;
+  }
+  .menu ul form button {
+      
+      font-weight: bold;
   }
 .menu > ul {
     display: flex;
