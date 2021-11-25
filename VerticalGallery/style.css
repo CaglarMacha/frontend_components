@@ -82,16 +82,17 @@
   border-bottom-right-radius: 5px;  
  }  
  #divonebutton {
-    opacity: 0.3;
-    height:100px; 
-    width:200px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;
-    font-weight: bolder;
-    font-size: 0px;
-    border:10px black solid;
+   opacity: 0.4;
+   height: 100px;
+   width: 200px;
+   margin: -20px ,-50px;
+   position: relative;
+   top:50%;
+   left :40%;
+   font-size: larger;
+   font-weight: bolder;
+   border:10px black solid;
+   transition: width 2s, height 4s;
  }
  .divonebuttons{
     opacity: 0.4;
@@ -106,7 +107,8 @@
     border:10px black solid;
     transition: width 2s, height 4s;
  }
- .divonebuttons:hover {
+
+ #divonebutton1:hover {
     opacity: 1;
     background-image: url('https://source.unsplash.com/1600x900/?nature,water');
     width: 300px;
@@ -114,3 +116,27 @@
     font-size: 50px;
     
  }
+ #divonebutton2:hover {
+   opacity: 1;
+   background-image: url('https://source.unsplash.com/1600x900/?car,cars');
+   width: 300px;
+   height: 300px;
+   font-size: 50px;
+   
+}
+#divonebutton3:hover {
+   opacity: 1;
+   background-image: url('https://source.unsplash.com/1600x900/?car,cars');
+   width: 300px;
+   height: 300px;
+   font-size: 50px;
+   
+}
+#divonebutton4:hover {
+   opacity: 1;
+   background-image: url('https://source.unsplash.com/1600x900/?car,cars');
+   width: 300px;
+   height: 300px;
+   font-size: 50px;
+   
+}
