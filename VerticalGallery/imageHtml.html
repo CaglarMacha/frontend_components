@@ -5,44 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" />
-    
     <link rel="stylesheet" href="style.css" />
   </head>
-  <script>
-    const sliderContainer = document.querySelector(".slider-container");
-    const slideRight = document.querySelector(".right-slide");
-    const slideLeft = document.querySelector(".left-slide");
-    const upButton = document.querySelector(".up-button");
-    const downButton = document.querySelector(".down-button");
-    const slidesLength = slideRight.querySelectorAll("div").length;
-    let activeSlideIndex = 0;
-    slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
-    const changeSlide = (direction) => {
-      const sliderHeight = sliderContainer.clientHeight;
-      if (direction === "up") {
-        activeSlideIndex++;
-        if (activeSlideIndex > slidesLength - 1) activeSlideIndex = 0;
-      } else if (direction === "down") {
-        activeSlideIndex--;
-        if (activeSlideIndex < 0) activeSlideIndex = slidesLength - 1;
-      }
-      slideRight.style.transform = `translateY(-${
-        activeSlideIndex * sliderHeight
-      }px)`;
-      slideLeft.style.transform = `translateY(${
-        activeSlideIndex * sliderHeight
-      }px)`;
-    };
-    
-    upButton.addEventListener("click", () => changeSlide("up"));
-    downButton.addEventListener("click", () => changeSlide("down"));
-  </script>
 
   <body>
     <div class="slider-container">
       <div class="left-slide">
         <div style="background-color: #b99f8a">
-          
+          <button class="degistir" id="change">Değiştir</button>
           <h1>Nature</h1>
           <p>new collection</p>
         </div>
@@ -60,12 +30,17 @@
         </div>
       </div>
       <div class="right-slide">
-        <div class="onediv"
+        <div
+          class="onediv"
           style="
             background-image: url('https://source.unsplash.com/1600x900/?nature,water');
           "
+        >
           
-        ><button id="divonebutton" onclick="{() => changeSlide('up')}">Purchase</button></div>
+          <button class="divonebuttons" >
+            Purchase
+          </button>
+        </div>
         <div
           style="
             background-image: url('https://source.unsplash.com/1600x900/?car,cars');
@@ -92,4 +67,7 @@
       </div>
     </div>
   </body>
+  <script src="style.js">
+    
+  </script>
 </html>

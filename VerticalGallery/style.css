@@ -90,6 +90,27 @@
     top:50%; 
     left:50%;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 0px;
     border:10px black solid;
+ }
+ .divonebuttons{
+    opacity: 0.4;
+    height: 100px;
+    width: 200px;
+    margin: -20px ,-50px;
+    position: relative;
+    top:50%;
+    left :40%;
+    font-size: larger;
+    font-weight: bolder;
+    border:10px black solid;
+    transition: width 2s, height 4s;
+ }
+ .divonebuttons:hover {
+    opacity: 1;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    
  }
